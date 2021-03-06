@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Component
-public class MemoryBookService implements BookService {
+public class MemoryBookService implements BookService{
     private List<Book> list = new ArrayList<>();
     private  BookService bookService;
 

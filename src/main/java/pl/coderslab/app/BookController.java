@@ -12,6 +12,7 @@ import java.util.List;
 public class BookController {
    private  BookService bookService;
    public BookController(BookService bookService){
+
        this.bookService=bookService;
    }
    @GetMapping("")
@@ -20,11 +21,9 @@ public class BookController {
        return bookService.getBooks();
    }
 
-
     @RequestMapping("/helloBook")
     public Book helloBook() {
         return new Book(1L, "9788324631766", "Thinking in Java",
                 "Bruce Eckel", "Helion", "programming");
     }
-
 }

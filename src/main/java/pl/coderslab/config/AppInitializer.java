@@ -7,6 +7,7 @@ public class AppInitializer
         AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected Class<?>[] getRootConfigClasses() {
+
         return null;
     }
 
@@ -18,6 +19,7 @@ public class AppInitializer
 
     @Override
     protected String[] getServletMappings() {
+
         return new String[]{"/"};
     }
 }

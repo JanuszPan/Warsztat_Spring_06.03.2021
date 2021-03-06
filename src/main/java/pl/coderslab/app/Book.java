@@ -1,7 +1,7 @@
 package pl.coderslab.app;
 
 public class Book {
-    private  Long id;
+    private Long id;
     private String isbn;
     private String title;
     private String author;
